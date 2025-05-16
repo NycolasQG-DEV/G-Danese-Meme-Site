@@ -1,11 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    min-height: 100vh;
     font-family: "Montserrat";
     margin: 0;
-    overflow-x: hidden;;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,6 +16,7 @@ header {
     background-color: rgb(190, 15, 15);
     height: 100px;
 }
+
 header h1 {
     margin: 20px;
     margin-left: 50px;
@@ -31,7 +31,10 @@ header nav {
 header nav ul {
     display: flex;
     flex-direction: row;
-    gap: 35px
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 header nav li {
@@ -42,17 +45,27 @@ header nav li {
 header nav li:hover {
     color: #ffffff;
     font-weight: bold;
-    /* border-bottom: 2px solid #ffffff; */
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    
 }
 
-section{
-    padding:25px;
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+.container {
+    width: 650px;
+    padding: 0 20px; 
+}
+
+section {
+    padding: 25px 0;
 }
 
 footer {
@@ -66,15 +79,12 @@ footer p {
     text-align: center;
 }
 
-main {
-    width: 650px;
-    height: 100%;
-}
-
 img {
     background-size: cover;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
-p strong{
+p strong {
     color: rgb(190, 15, 15);
 }
